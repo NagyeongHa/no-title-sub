@@ -1,0 +1,50 @@
+
+
+.product  {
+	position: initial;
+	height: 1000px;
+	background-color: white;
+}
+
+
+/*Scroll event*/
+.drop-down-menu.show {
+	height: 20px;
+
+}
+
+.title.show {
+	top: 0px;
+	left:20px;
+	font-size: 17px;
+
+}
+.login-button.show{
+	width: 15px;
+	top: -20px;
+  right: -10px;
+}
+
+/*.button.show {
+	border: 0px;
+	background-color: #ffffff00;
+
+}*/
+
+.drop-down.show {
+    width: 17px;
+    position: fixed;
+    right: 9px;
+    top: -20px;
+}
+
+
+
+.drop-down-menu {
+	height: 65px;
+}
+
+.ani {
+	transition: 0.8s;
+	animation-duration: 3s;
+}
