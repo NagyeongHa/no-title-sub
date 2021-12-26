@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* .select_input {
+    border: none;
+    background: transparent;
+} */
+
+
+#selectBox {
+    /* border: solid 1px red; */
+    margin: 50px auto 20px auto;
+    display: block;
+    font-size: 55px;
+    border: none;
+}
+
+.wheather {
+    /* border: solid 1px red; */
+    display: inline-block;
+    margin:10px 11px;
+    font-size: 20px;
+}
+
+.container {
+    /* border: solid 2px green; */
+    max-width: 74vw;
+    margin: 0 auto;
+    
+}
+
+.content {
+    /* border: solid 1px blue; */
+    width: 100%;
+    margin: auto;
+   
+    
+}
+
+.imgBox{
+     /* background-color: pink; */
+    display: inline-block;
+    width: 23%;
+    padding: 11px;
+    height: auto;
+    object-fit: cover;
+   
+    
+}
+
+.container > .content > li > img{
+    width: 100%;
+    
+    
+}
+
