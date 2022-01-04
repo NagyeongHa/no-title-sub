@@ -48,7 +48,42 @@
 // })
 
 
-//3
+// //3
+// //json파일 읽어오는 fetch
+// function loadItems() {
+//     return fetch("../../attire.json")
+//         .then((response) => response.json())
+//         .then((json) => json.items);
+// }
+
+
+// loadItems().then((items) => {
+//     // console.log(items);
+//     displayItems(items);
+// });
+
+// // html파일의 class="imgBox2"에 이미지 넣기
+// function displayItems(items) {
+//     const imgBox2 = document.querySelector(".imgBox2");
+//     imgBox2.innerHTML = items.map((item) => createHTMLString(item)).join("");
+// }
+
+// //json의 이미지파일 주소값 연결
+// function createHTMLString(item) {
+//     return `
+//         <img src="${item.image}" />
+//     `
+// }
+
+
+// //무한스크롤
+//  window.addEventListener('scroll',()=>{
+//     if(window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
+//         loadItems();
+//     }
+// })
+
+//4
 //json파일 읽어오는 fetch
 function loadItems() {
     return fetch("../../attire.json")
@@ -59,13 +94,25 @@ function loadItems() {
 
 loadItems().then((items) => {
     // console.log(items);
+    console.log(items["temperature"]);
     displayItems(items);
 });
 
 // html파일의 class="imgBox2"에 이미지 넣기
 function displayItems(items) {
     const imgBox2 = document.querySelector(".imgBox2");
-    imgBox2.innerHTML = items.map((item) => createHTMLString(item)).join("");
+    imgBox2.innerHTML = 
+    items.map((item) => createHTMLString(item)).join("");
+}
+
+//셀렉 임의 코드
+let a = json temperature값
+if(a == "4") {
+    이미지박스에 4 사진만
+} else if( a== "5") {
+    이미지 박스에 5 사진만
+} else {
+    이미지박스에 9사진만
 }
 
 //json의 이미지파일 주소값 연결
